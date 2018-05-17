@@ -1,14 +1,14 @@
 """
 Shuffle
-Randomise the order of an array
+Randomise the order of a list while keeping non-unique elements
 By Dylan Hamer
 """
 
-def shuffle(array):
-"""Randomise the order of the array"""
-  originalArray = array[:]
-  shuffledArray = []
-  for item in array:
-    randomIndex = random.randint(0, len(originalArray)-1)
-    shuffledArray.append(originalArray.pop(randomIndex))
-  return shuffledArray
+def shuffle(shuffleList):
+  """Randomise the order of the array"""
+  originalList = shuffleList[:]  # Make array immutable
+  shuffledList = []
+  for item in shuffleList:
+    randomIndex = random.randint(0, len(originalList)-1)
+    shuffledList.append(originalList.pop(randomIndex))
+  return shuffledList
