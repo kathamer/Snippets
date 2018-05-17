@@ -11,4 +11,4 @@ def exclude(originalList, exclusionIndex):
         newList.pop(exclusionIndex)  # Remove item at specific index
         return newList
     else:  # If it doesn't have the item
-        raise IndexError("Could not exclude {}".format(exclusion))  # Raise an error condition
+        raise IndexError("Could not exclude {}".format(exclusionIndex))  # Raise an error condition
